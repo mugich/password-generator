@@ -10,8 +10,19 @@ function writePassword() {
 
 }
 
-var passLengthString = prompt("Please enter password length between 8 to 128!");
-var passLengthNum = parseInt(passLengthString);
+
+function generatePassword(){
+
+var passLengthInt = parseInt(prompt("Please enter password length between 8 to 128!"));
+
+while (passLengthInt <= 8 || passLengthInt >= 128){
+  alert("invalid number! Try again");  
+  var passLengthInt = parseInt(prompt("Please enter password length between 8 to 128!"));
+}
+
+
+
+console.log(passLengthInt);
 
 var confirmLowerCase = confirm("Do you want to include Lower Case?");
 var confirmUpperCase = confirm("Do you want to include Upper Case?");
@@ -25,7 +36,7 @@ var confirmNumber = confirm("Do you want to include Numbers?");
 
 
 
-function generatePassword(){
+
 
   return "temporary password";
 
