@@ -1,5 +1,3 @@
-# password-generator
-
 # Password Generator
 
 ## Project Description
@@ -14,8 +12,6 @@
 
 
 ## Application links
-
-* [deployed application](## Application links
 
 * [deployed application](https://mugich.github.io/password-generator/)
 
