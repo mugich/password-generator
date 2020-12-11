@@ -16,7 +16,7 @@ function generatePassword(){
 
   var passLengthInt = parseInt(prompt("Please enter password length between 8 to 128!"));  
 
-while (passLengthInt <= 8 || passLengthInt >= 128){
+while (passLengthInt < 8 || passLengthInt > 128){
   alert("invalid number! Try again");  
   var passLengthInt = parseInt(prompt("Please enter password length between 8 to 128!"));
 }
@@ -45,16 +45,16 @@ if(!confirmLowerCase && !confirmUpperCase && !confirmSpecialChar && !confirmNumb
 var lastArray = []
 
 if(confirmLowerCase){
-  lastArray = lastArray.concat(confirmLowerCase);
+  lastArray = lastArray.concat(lowerCase);
 }
 if(confirmUpperCase){
-  lastArray = lastArray.concat(confirmUpperCase);
+  lastArray = lastArray.concat(upperCase);
 }
 if(confirmSpecialChar){
-  lastArray = lastArray.concat(confirmSpecialChar);
+  lastArray = lastArray.concat(specialChar);
 }
 if(confirmNumber){
-  lastArray = lastArray.concat(confirmNumber);
+  lastArray = lastArray.concat(numbers);
 }
 
 var randomPassword = " "
